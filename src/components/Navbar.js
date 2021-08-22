@@ -39,3 +39,8 @@ Navbar.propTypes = {
   aboutText:PropTypes.string.isRequired
 }
 
+Navbar.defaultProps = {
+  title: 'Set title here',
+  aboutText: 'About'
+};
+
