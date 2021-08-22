@@ -1,5 +1,4 @@
 import React ,{useState}from 'react'
-import { isCompositeComponentWithType } from 'react-dom/test-utils'
 
 export default function About() {
 
@@ -13,7 +12,7 @@ export default function About() {
     
     const toggleStyle= ()=>{
         if(myStyle.color === "black"){
-            setmyStyle({
+            setMyStyle({
                 color: "white",
                 backgroundColor: "black",
                 border: "1px solid white"
@@ -21,7 +20,7 @@ export default function About() {
             setBtnText("Enable Light Mode")
         }
         else{
-            setmyStyle({
+            setMyStyle({
                 color: "black",
                 backgroundColor: "white"
             })
@@ -47,7 +46,7 @@ export default function About() {
                 </div>
                 </div>
             </div>
-            <div className="accordion-item">
+            <div className="accordion-item" style={myStyle}>
                 <h2 className="accordion-header" id="headingTwo">
                 <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Accordion Item #2
