@@ -5,19 +5,19 @@ export default function TextForm(props) {
         // console.log("Uppercase was clicked" + text )
         let newText = text.toUpperCase();
         setText(newText)
-        props.showAlert("Converted to uppercase","sucess");
+        props.showAlert("Converted to uppercase","success");
     }
     const handleLoClick = ()=>{
         // console.log("Uppercase was clicked" + text )
         let newText = text.toLowerCase();
         setText(newText)
-        props.showAlert("Converted to lowercase","sucess");
+        props.showAlert("Converted to lowercase","success");
         }
     
     const handleClearClick = ()=>{
         let newText= '';
         setText(newText);
-        props.showAlert("Text Cleared","sucess");
+        props.showAlert("Text Cleared","success");
     } 
     
     const handleOnChange = (event)=>{
@@ -30,14 +30,14 @@ export default function TextForm(props) {
         text.select();
         text.setSelectionRange(0,9999);
         navigator.clipboard.writeText(text.value);
-        props.showAlert("Copied to Cliboard","sucess");
-        props.showAlert("Coppied to Clipboard!","sucess");
+        props.showAlert("Copied to Cliboard","success");
+        props.showAlert("Coppied to Clipboard!","success");
     }
 
     const handleExtraSpaces = () => {
         let newText = text.split(/[ ]+/);
         setText(newText.join(" "));
-        props.showAlert("Extra Spaces Removed","sucess");
+        props.showAlert("Extra Spaces Removed","success");
 
     }
 
