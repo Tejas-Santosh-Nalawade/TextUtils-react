@@ -2,7 +2,7 @@ import React ,{useState}from 'react'
 //import { isCompositeComponentWithType } from 'react-dom/test-utils'
 
 export default function About() {
-    const [myStyle, setMyStyle] = useState({
+    const [myStyle, setmyStyle] = useState({
             color: "black",
             backgroundColor: "white",
             
@@ -11,7 +11,7 @@ export default function About() {
     
     const toggleStyle= ()=>{
         if(myStyle.color === "black"){
-            setMyStyle({
+            setmyStyle({
                 color: "white",
                 backgroundColor: "black",
                 border: "1px solid white"
@@ -19,7 +19,7 @@ export default function About() {
             setBtnText("Enable Light Mode")
         }
         else{
-            setMyStyle({
+            setmyStyle({
                 color: "black",
                 backgroundColor: "white"
             })
@@ -69,9 +69,6 @@ export default function About() {
                 </div>
                 </div>
             </div>
-        </div>
-        <div className="container my-3">
-            <button onClick={toggleStyle} type="button" className="btn btn-primary">{btntext}</button>
         </div>
         
     </div>
