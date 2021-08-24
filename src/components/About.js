@@ -1,4 +1,8 @@
 import React ,{useState}from 'react'
+<<<<<<< Updated upstream
+=======
+//import { isCompositeComponentWithType } from 'react-dom/test-utils'
+>>>>>>> Stashed changes
 
 export default function About() {
 
