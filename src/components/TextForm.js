@@ -29,10 +29,7 @@ export default function TextForm(props) {
         var text = document.getElementById("myBox");
         text.select();
         navigator.clipboard.writeText(text.value);
-<<<<<<< Updated upstream
-=======
         document.getSelection().removeAllRanges();
->>>>>>> Stashed changes
         props.showAlert("Copied to Cliboard","success");
         props.showAlert("Coppied to Clipboard!","success");
     }

@@ -1,13 +1,8 @@
 import React ,{useState}from 'react'
-<<<<<<< Updated upstream
-=======
 //import { isCompositeComponentWithType } from 'react-dom/test-utils'
->>>>>>> Stashed changes
 
 export default function About() {
-
-
-    const [myStyle, setmyStyle] = useState({
+    const [myStyle, setMyStyle] = useState({
             color: "black",
             backgroundColor: "white",
             
